@@ -38,8 +38,8 @@ string from **call_back_url** for verification
 
 6)Get user data
 > user_data = twitter_client.get_user_data()
-the response will be like this
 
+the response will be like this
 """json
 {'id': 1338818395706277890,
 'id_str': '1338818395706277890',
