@@ -21,7 +21,6 @@ class TwitterAPIHandler():
     @staticmethod
     def __get_url_data_parcer(string):
         d  = {}
-        print (string)
         for fields in string.split("&"):
             key, val = fields.split("=")
             d[key] = val
