@@ -4,10 +4,13 @@
 
 2)Export it to environment variable
 >  export consumer_key=**"<your consumer key>"**
+
 >  export consumer_secret=**"<your consumer secret>"**
 
 3)use this TwitterAPIHandler class
+
 > twitter_client = TwitterAPIHandler()
+
 > login url = twitter_client.get_login_url()
 
 use this **login url** for athourize application from browser
