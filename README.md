@@ -3,9 +3,9 @@
 1)Get consumer_key, and consumer_secret from twitter developer portal
 
 2)Export it to environment variable
->  export consumer_key=**"<your consumer key>"**
+>  export consumer_key=**"your consumer key"**
 
->  export consumer_secret=**"<your consumer secret>"**
+>  export consumer_secret=**"your consumer secret>"**
 
 3)use this TwitterAPIHandler class
 
@@ -43,6 +43,7 @@ string from **call_back_url** for verification
 > user_data = twitter_client.get_user_data()
 
 the response will be like this
+
 """json
 {'id': 1338818395706277890,
 'id_str': '1338818395706277890',
