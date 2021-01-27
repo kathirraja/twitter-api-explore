@@ -28,15 +28,15 @@ use this call back url to set call back creds
 
 string from **call_back_url** for verification
 
-# set call back creds
+4)set call back creds
 >twitter_client.set_call_back_creds(cbu)
 
-# Get access token to access user data
+5)Get access token to access user data
 >twitter_client.get_access_tocken()
 
   
 
-#Get user data
+6)Get user data
 > user_data = twitter_client.get_user_data()
 the response will be like this
 
