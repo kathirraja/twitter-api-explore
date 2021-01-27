@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from requests_oauthlib import OAuth1Session
 import os
 
