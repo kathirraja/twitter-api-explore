@@ -3,15 +3,16 @@
 1)Get consumer_key, and consumer_secret from twitter developer portal
 
 2)Export it to environment variable
->  export consumer_key=**"your consumer key"**
-
->  export consumer_secret=**"your consumer secret>"**
-
+```bash
+$export consumer_key="your consumer key"
+$export consumer_secret="your consumer secret>"
+```
 3)use this TwitterAPIHandler class
 
-> twitter_client = TwitterAPIHandler()
-
-> login url = twitter_client.get_login_url()
+```python
+twitter_client = TwitterAPIHandler()
+login url = twitter_client.get_login_url()
+```
 
 use this **login url** for athourize application from browser
 
@@ -27,24 +28,32 @@ call_back url will look like this
 
 use this call back url to set call back creds
 
->cbu = "oauth_token=cls2zAAAAAABMKic234d0UVvJs&oauth_verifier=NnZGPOosh9ba7vZr4uH32423ddVb0G"
-
+```python
+cbu = "oauth_token=cls2zAAAAAABMKic234d0UVvJs&oauth_verifier=NnZGPOosh9ba7vZr4uH32423ddVb0G"
+```
 string from **call_back_url** for verification
 
 4)set call back creds
->twitter_client.set_call_back_creds(cbu)
 
+```python
+twitter_client.set_call_back_creds(cbu)
+```
 5)Get access token to access user data
->twitter_client.get_access_tocken()
 
+```python
+twitter_client.get_access_tocken()
+```
   
 
 6)Get user data
-> user_data = twitter_client.get_user_data()
+
+```python
+user_data = twitter_client.get_user_data()
+```
 
 the response will be like this
 
-"""json
+```python
 {'id': 1338818395706277890,
 'id_str': '1338818395706277890',
 'name': 'Abi ',
@@ -89,7 +98,7 @@ the response will be like this
 'suspended': False,
 'needs_phone_verification': False,
 'email': 'abi@gmail.com'}
-"""
+```
 
 This module can be integrated with any web framework like flask, django
 Api needs to be design for this application to expose data outside.
