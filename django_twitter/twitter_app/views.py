@@ -27,7 +27,6 @@ def callback(request):
 
 @login_required
 def get_profile(request):
-    print(request.user)
     return JsonResponse(request.user.profile.tokens.last().get_user_data())
 
 @login_required
@@ -36,7 +35,6 @@ def get_timeline(request):
 
 @login_required
 def get_timeline_from_db(request):
-    print (request.user)
     filter_options = {
         'text__icontains':request.GET.get('search',"")
     }

@@ -37,7 +37,6 @@ class TimeLine(models.Model):
     def bulk_create(cls,owner,timelines):
         posts = []
         for post in timelines:
-            print("\n\n\n",post)
             if cls.objects.filter(id_str=post["id_str"]).first()==None:
                 posts.append(cls(
                     owner=owner,
