@@ -1,7 +1,7 @@
 *.pyc
 **/*.pyc
 *.db
-*/migrations/[0-9]*
+**/migrations
 */__pycache__
 local_settings.py
 *.pdf
