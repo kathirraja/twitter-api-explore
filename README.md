@@ -7,7 +7,7 @@
 $export consumer_key="your consumer key"
 $export consumer_secret="your consumer secret>"
 ```
-##Local Test server
+## Local Test server
  ```bash
  $cd /path/to/django_twitter 
  $python manage.py makemigrations
@@ -18,7 +18,7 @@ $export consumer_secret="your consumer secret>"
  $python manage.py runserver 127.0.0.1:8000
  ```
 
-##API Docs 
+## API Docs 
 1) go to http://localhost:8000
 
 2) click on LoginwithTwitter
