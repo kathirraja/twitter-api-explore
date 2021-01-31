@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  proxy:
+    build:
+      context: ./proxy
+    ports:
+      - "8080:8080"
+    depends_on:
+      - twitter-app
+  twitter-app:
+    build:
+      context: .
+    environment:
+      - ALLOWED_HOSTS=twitter-app
+
+volumes:
+  static_data:

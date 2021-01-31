@@ -3,7 +3,7 @@
 set -e
 
 # python manage.py collectstatic --noinput
-
+echo "Starting $NAME as `whoami`"
 NAME="twitter"                              #Name of the application (*)
 DJANGODIR=/home/appadmin/acsz/           # Django project directory (*)
 SOCKFILE=/tmp/twitter.sock        # we will communicate using this unix socket (*)
@@ -31,6 +31,7 @@ test -d $RUNDIR || mkdir -p $RUNDIR
 # Start your Django Unicorn
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
 python manage.py collectstatic <<<yes
+
 
 exec gunicorn ${DJANGO_WSGI_MODULE}:application \
   --name $NAME \

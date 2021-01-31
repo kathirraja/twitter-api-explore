@@ -3,8 +3,8 @@ import os
 
 class TwitterAPIHandler():
 
-    consumer_key = os.environ.get('consumer_key') 
-    consumer_secret = os.environ.get('consumer_secret')
+    consumer_key = "FCw9DRnzzL1zWCuoi2RCoZt3I" #os.environ.get('consumer_key') 
+    consumer_secret = "ZBSBFNgZhAYyeNkKnqfEWKy8wdXpQ8fn3MUkUyIrOG2evtOHhJ" #os.environ.get('consumer_secret')
 
     request_token_url = 'https://api.twitter.com/oauth/request_token'
     access_tocken_url = 'https://api.twitter.com/oauth/access_token'
