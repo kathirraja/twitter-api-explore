@@ -1,4 +1,4 @@
-### Twitter sigin in core
+# Twitter API Explore with python (Django)
 ## How to use it.
 1)Get consumer_key, and consumer_secret from twitter developer portal
 
